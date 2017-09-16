@@ -8,7 +8,9 @@ namespace Assets.Scripts.InventorySystem
 {
     public class ItemManager : MonoBehaviour
     {
-        [SerializeField] private ItemDatabase itemDatabase;
+        private ItemDatabase itemDatabase;
+
+
 
         public void AddItem(int itemId, int value = 1)
         {
