@@ -13,7 +13,7 @@ namespace Assets.Scripts.InventorySystem
 
         public List<ItemData> ItemDataList
         {
-            get { return itemDataList; }
+            get { return (List<ItemData>)Utilities.DeepClone(itemDataList); }
         }
     }
 }
