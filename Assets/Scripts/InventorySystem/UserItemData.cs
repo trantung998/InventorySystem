@@ -8,7 +8,7 @@ namespace Assets.Scripts.InventorySystem
 {
     public class UserItemManager
     {
-        private string uItemDataFile = "u_item.data";
+        private string uItemDataFile = "/u_item.data";
         private UserItemDataFile userData;
 
         public UserItemDataFile UserData

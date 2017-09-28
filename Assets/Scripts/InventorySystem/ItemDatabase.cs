@@ -10,10 +10,16 @@ namespace Assets.Scripts.InventorySystem
     public class ItemDatabase : ScriptableObject
     {
         [SerializeField] private List<ItemData> itemDataList;
+        [SerializeField] private List<ItemVisual> itemVisualList;
 
         public List<ItemData> ItemDataList
         {
-            get { return (List<ItemData>)Utilities.DeepClone(itemDataList); }
+            get { return (List<ItemData>) Utilities.DeepClone(itemDataList); }
+        }
+
+        public List<ItemVisual> ItemVisualList
+        {
+            get { return itemVisualList; }
         }
     }
 }
