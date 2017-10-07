@@ -78,5 +78,10 @@ namespace Assets.Scripts.InventorySystem
     public class UserItemDataFile : SaveableClass
     {
         public List<UserItem> UserItemList;
+
+        public UserItemDataFile()
+        {
+            UserItemList = new List<UserItem>();
+        }
     }
 }
